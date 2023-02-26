@@ -1,0 +1,82 @@
+.news__cards {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 6rem;
+
+    .news__item1 {
+        width: 50rem;
+        height: 35rem;
+        background: url(../assets/pictures/n_schit.JPG);
+        background-size: 120%;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        align-items: flex-end;
+
+    }
+
+    .news__item {
+        overflow: hidden;
+        width: auto;
+        height: 33rem;
+
+        .news__item-text {
+            padding: 4rem 2rem;
+            color: white;
+
+            :nth-child(1) {
+                padding-bottom: 0.8rem;
+            }
+        }
+
+    }
+
+
+}
+
+.news__item-image {
+    width: 25rem;
+    height: 17.5rem;
+    padding-bottom: 2rem;
+    overflow: hidden;
+}
+
+.news__item-text2 {
+    h3 {
+        max-width: 25rem;
+        margin-bottom: 0.7rem;
+        padding: 0 0.5rem;
+    }
+
+    span {
+        padding: 0 0.5rem;
+    }
+}
+
+@media screen and(max-width:1000px) {}
+
+@media screen and(max-width:767px) {
+    .news__cards {
+        .news__item1 {
+            height: 30rem;
+        }
+
+        .news__item {
+            overflow: hidden;
+            margin-right: 6rem;
+            width: auto;
+            height: 30rem;
+            &:nth-child(2){display: none;}
+        }
+    }
+}
+
+@media screen and(max-width:320px) {
+    .news__cards {align-items: center;
+        .news__item1 {
+            height: 30rem;
+            .news__item-text{
+            font-size: 2rem;
+        }}
+}}

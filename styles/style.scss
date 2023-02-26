@@ -1,0 +1,254 @@
+@import "_normalize.scss";
+@import "_header.scss";
+@import "_footer.scss";
+@import "_fonts.scss";
+@import "_goods.scss";
+@import "_news.scss";
+@import "_reviews.scss";
+@import "_forms.scss";
+@import "_catalog.scss";
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 10px;
+}
+
+@media screen and(max-width:1150px) {
+    html {
+        font-size: 7px;
+    }
+
+}
+
+ul,
+li,
+a {
+    text-transform: none;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    color: rgb(85, 85, 85);
+
+}
+
+.wrapper {
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
+.container {
+    padding: 0 3rem;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.smooth__bg {
+    background-color: rgb(55, 56, 58)
+}
+
+.button {
+    height: 3.2rem;
+    background-color: #ffffff;
+    border: 1px solid rgba(85, 85, 85, 0.3);
+    cursor: pointer;
+    color: rgb(85, 85, 85);
+    padding: 0 5px;
+}
+
+.catalog__icon {
+    max-height: 3.2rem;
+}
+
+.vagonka {
+    content: url(../assets/pictures/t_vagonka_2.jpg)
+}
+
+.shtil {
+    content: url(../assets/pictures/t_imitacya_2.jpg)
+}
+
+.imbrus {
+    content: url(../assets/pictures/t_imitacya_2.jpg)
+}
+
+.brus {
+    content: url(../assets/pictures/t_brus_2.png)
+}
+
+.doska-pol {
+    content: url(../assets/pictures/)
+}
+
+.doska {
+    content: url(../assets/icons/doska.png)
+}
+
+.schit {
+    content: url(../assets/icons/schit.png);
+}
+
+
+.title__link {
+    padding-left: 3.4rem;
+}
+
+.main__title {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.section__title {
+    margin-bottom: 20px;
+}
+
+
+.logo {
+    span {
+        color: rgb(85, 85, 85);
+        padding-left: 10px;
+    }
+}
+
+.border__smooth {
+    border: 1px solid rgba(151, 151, 151, 0.15);
+}
+
+.hover__shadow {
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.2);
+
+    }
+}
+
+.slider__btn-right {
+    transform: rotate(180deg);
+}
+
+.info {
+    overflow: hidden;
+    width: 100vw;
+    height: 25vh;
+    background: url(../assets/pictures/vagonka-stil.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-bottom: 4rem;
+}
+
+.compamy {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 4rem;
+
+    .leftblock {
+        img {
+            max-width: auto;
+            max-height: 26rem;
+        }
+
+    }
+
+    .rightblock {
+        h2 {
+            margin: 6rem 0 2rem;
+            font-size: 3.4rem;
+        }
+
+        p {
+            margin: 0 0 2rem;
+        }
+    }
+}
+
+
+@media screen and(max-width:767px) {
+    .compamy {
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 4rem;
+
+        .leftblock {
+            display: none;
+
+        }
+    }
+
+}
+
+.title__link:hover {
+    text-decoration: underline;
+}
+
+.button__circle {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+
+    &:hover {
+        border: 1px solid orange;
+        color: orange;
+    }
+
+    span {
+        position: relative;
+        top: -0.1rem;
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+.about {
+    background: url(../assets/pictures/Group_bg.png);
+    background-repeat: no-repeat;
+    background-position: 98% 40%;
+    background-size: 40%;
+    width: 100vw;
+
+    .about__content {
+        padding: 8rem 0 10rem 10rem;
+
+        .about__title {
+            font-weight: 600;
+            font-size: 4rem;
+            line-height: 5rem;
+            max-width: 60rem;
+
+        }
+
+        .about__text {
+            margin-top: 2.5rem;
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 2rem;
+            max-width: 40rem;
+        }
+
+        .about__buttons {
+            margin-top: 6rem;
+            display: flex;
+            gap: 3rem;
+        }
+    }
+}

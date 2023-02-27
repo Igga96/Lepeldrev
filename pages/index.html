@@ -29,6 +29,9 @@
         <a class="number smooth__text large__text" href="tel: +375447001676"><span>+375447001676</span><br>
             <span class="smooth__text medium__text">Звоните с 08.00 до 17.00</span>
         </a>
+        <button class="button top__button button__call button__bg-orange">Заказать звонок</button>
+        <a href="../assets/files/product.xlsx" download><button class="button">Скачать
+                прайслист</button></a>
     </div>
 
     <header id="header">
@@ -108,8 +111,9 @@
                         любой сложности и типа, наша продукция занимает
                         лидирующие позиция на рынке.</p>
                     <div class="about__buttons">
-                        <button class="button button__bg-orange border__black ">Каталог</button>
-                        <button class="button border__black">Скачать прайслист</button>
+                        <a href="../pages/catalog.html"><button class="button button__bg-orange ">Каталог</button></a>
+                        <a href="../assets/files/product.xlsx" download><button class="button">Скачать
+                                прайслист</button></a>
                     </div>
                 </div>
             </div>
@@ -119,7 +123,7 @@
             <div class="goods__tittle section__title">
                 <div class="main__title">
                     <h2 class="large__text">Популярные товары</h2>
-                    <a class="title__link medium__text smooth__text" href="">Весь каталог</a>
+                    <a class="title__link medium__text smooth__text" href="../pages/catalog.html">Весь каталог</a>
                 </div>
                 <div class="goods__buttons">
                     <button
@@ -132,29 +136,31 @@
                 <div class="goods__slider-line">
                     <div class="goods__item border__smooth hover__shadow">
                         <img src="../assets/pictures/t_brus_1.jpg" alt="img">
-                        <span class="medium__text">От 10р за м3</span>
+                        <span class="medium__text">От 0,91р за 1 шт</span>
                         <span class="medium__text">Брус</span>
                     </div>
                     <div class="goods__item border__smooth hover__shadow">
                         <img src="../assets/pictures/t_vagonka.jpg" alt="img">
-                        <span class="medium__text">От 10р за м3</span>
-                        <span class="medium__text">Вагонка</span>
+                        <span class="medium__text">От 4р за 1 шт</span>
+                        <span class="medium__text">Евровагонка</span>
                     </div>
                     <div class="goods__item border__smooth hover__shadow">
                         <img src="../assets/pictures/t_polok_1.jpg" alt="img">
-                        <span class="medium__text">От 10р за м3</span>
+                        <span class="medium__text">От 3р за 1 шт</span>
                         <span class="medium__text">Полок для бани</span>
                     </div>
                     <div class="goods__item border__smooth hover__shadow">
                         <img src="../assets/pictures/t_imitacya_2.jpg" alt="img">
-                        <span class="medium__text">От 10р за м3</span>
+                        <span class="medium__text">От 4р за 1 шт</span>
                         <span class="medium__text">Имитация бруса</span>
                     </div>
                     <div class="goods__item border__smooth hover__shadow">
                         <img src="../assets/pictures/t_pogonazh_1.jpg" alt="img">
-                        <span class="medium__text">От 10р за м3</span>
-                        <span class="medium__text">Погонаж</span>
+                        <span class="medium__text">От 3р за 1 шт</span>
+                        <span class="medium__text">Плинтус</span>
                     </div>
+                    <div class="goods__item"><a href="../pages/catalog.html"><button
+                                class="button border__black button__bg-orange">Перейти в каталог</button></a></div>
                 </div>
             </div>
         </section>
@@ -175,7 +181,7 @@
                     </div>
                 </a>
 
-                <div class="news__item border__smooth hover__shadow">
+                <div class="news__item border__smooth hover__shadow" id="news">
                     <a href="#">
                         <img class="news__item-image" src="../assets/pictures/plintus.jpg">
                         <div class="news__item-text2">
@@ -265,10 +271,12 @@
             <div class="footer__text">
                 <span class="white__text footer__text-title">Компания</span>
                 <ul class="footer__links white__text">
-                    <li><a class="white__text links__orange" href="#about__company">О компании</a></li>
+                    <li><a class="white__text links__orange" href="#company">О компании</a></li>
                     <li><a class="white__text links__orange" href="#news">Новости</a></li>
-                    <li><a class="white__text links__orange" href="#shops">Магазины</a></li>
-                    <!--необходимо создать точки на гугл и яндекс картах-->
+                    <li><a class="white__text links__orange" target="_blank"
+                            href="https://www.google.com/maps/d/u/0/edit?mid=1RhRLeR4IUbuDTW55aj6hLyPZtSLef0s&ll=54.875875285631764%2C28.70717927081293&z=18">Магазины</a>
+                    </li>
+
                 </ul>
             </div>
 

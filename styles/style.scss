@@ -205,8 +205,8 @@ body {
     background-color: #ffffff;
 
     &:hover {
-        border: 1px solid orange;
-        color: orange;
+        border: 1px solid rgb(255, 148, 90);
+        color: rgb(255, 148, 90);
     }
 
     span {
@@ -249,6 +249,53 @@ button {
             margin-top: 6rem;
             display: flex;
             gap: 3rem;
+        }
+    }
+}
+
+@media screen and(max-width:767px) {
+    .about {
+        background: none;
+
+
+        .about__content {
+            padding: 2rem;
+            text-align: center;
+
+            .about__content-left {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+
+                .about__title {
+                    font-weight: 600;
+                    font-size: 5rem;
+                    line-height: 5rem;
+                    max-width: 75%;
+                }
+
+                .about__text {
+                    margin-top: 2.5rem;
+                    font-weight: 500;
+                    font-size: 2rem;
+                    line-height: 2rem;
+                    max-width: 70%;
+                }
+
+                .about__buttons {
+                    margin-top: 2rem;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    gap: 2rem;
+
+                    button {
+                        height: 5rem;
+                        width: 22rem;
+                    }
+                }
+            }
         }
     }
 }
